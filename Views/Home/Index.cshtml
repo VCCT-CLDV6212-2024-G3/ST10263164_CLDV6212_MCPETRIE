@@ -1,0 +1,40 @@
+﻿@model ST10263164_CLDV6212_MCPETRIE.Models.CustomerProfile
+
+<div style="text-align: center; font-size: 12px;">
+    <h1 style="text-decoration: underline; margin-bottom: 20px;">ABC Retail</h1>
+</div>
+
+<body style="background-color: blanchedalmond;">
+
+    <div style="width: 90%; padding: 20px; margin-bottom: 20px; background-color: white; border: 1px solid black">
+        <form asp-action="UploadImage" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <button type="submit" style="float: right">Upload Image</button>
+        </form>
+    </div>
+
+    <div style="width: 90%; padding: 20px; margin-bottom: 20px; background-color: white; border: 1px solid black">
+        <form asp-action="AddCustomerProfile" method="post" style="dispaly:">
+            <input type="text" name="FirstName" placeholder="First Name" />
+            <input type="text" name="LastName" placeholder="Last Name" />
+            <input type="email" name="Email" placeholder="Email" />
+            <input type="text" name="PhoneNumber" placeholder="Phone Number" />
+            <button type="submit" style="float: right">Add Profile </button>
+        </form>
+    </div>
+
+    <div style="width: 90%; padding: 20px; margin-bottom: 20px; background-color: white; border: 1px solid black">
+        <form asp-action="ProcessOrder" method="post">
+            <input type="text" name="orderId" placeholder="Order ID" />
+            <button type="submit" style="float: right">Process Order</button>
+        </form>
+    </div>
+
+    <div style="width: 90%; padding: 20px; margin-bottom: 20px; background-color: white; border: 1px solid black">
+        <form asp-action="UploadContract" method="post" enctype="multipart/form-data">
+            <input type="file" name="file" />
+            <button type="submit" style="float: right">Upload Contract</button>
+        </form>
+    </div>
+
+</body>
